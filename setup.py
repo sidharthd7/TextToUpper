@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='UppercaseConverter',
-    version='0.1.0',
+    version='1.0.0',
     packages=find_packages(),
     description='A simple package to convert file content to uppercase',
     long_description=open('README.md').read(),
@@ -15,8 +15,9 @@ setup(
         'License :: OSI Approved :: MIT License',
         'Operating System :: OS Independent',
     ],
-    packages=find_packages(),
-    keywords=['python', 'video', 'lower to upper', 'uppercase converter', 'uppercase', 'textfile'],
+    keywords=['python', 'converter', 'lower to upper', 'uppercase converter', 'uppercase', 'textfile'],
+    include_package_data=True,
+    install_requires=[],
     python_requires='>=3.6',
     entry_points={
         'console_scripts': [
